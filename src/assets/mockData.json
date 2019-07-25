@@ -1,0 +1,15 @@
+{ "data": [
+    { "name": "Roberto Alomar", "icon": "folder" },
+    { "name": "Omar Vizquel", "icon": "android" },
+    { "name": "Albert Bell", "icon": "fingerprint" },
+    { "name": "Charles Naggy", "icon": "business" },
+    { "name": "Jose Mesa", "icon": "android" },
+    { "name": "Cliff Lee", "icon": "folder" },
+    { "name": "Conor McGregor", "icon": "folder" },
+    { "name": "Tony Ferguson", "icon": "fingerprint" },
+    { "name": "Max Holloway", "icon": "folder" },
+    { "name": "Jon Jones", "icon": "folder" },
+    { "name": "Daniel Cormier", "icon": "language" },
+    { "name": "Brock Lesnar", "icon": "fingerprint" }
+    ]
+}

@@ -1,0 +1,14 @@
+<div class="online-users">
+  <div class="online-users__header" (click)="usersLoaded ? expandUsers() : return" >
+      <i class="material-icons online-users__header-icon online-users__header-icon--disabled">person</i>
+      <p class="online-users__header-title">Expand Online Users</p>
+  </div>
+  <div class="online-users__list">
+    <mat-list>
+      <mat-list-item *ngFor="let user of users">
+        <mat-icon matListIcon>{{user.icon}}</mat-icon>
+        <h3 matLine> {{user.name}} </h3>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>
