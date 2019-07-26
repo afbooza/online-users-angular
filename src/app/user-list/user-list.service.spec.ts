@@ -22,7 +22,7 @@ describe('UserListService (with spies)', () => {
     userListService = new UserListService(<any> httpClientSpy);
   });
 
-  it('should return expected heroes (HttpClient called once)', () => {
+  it('should return expected users (HttpClient called once)', () => {
     const expectedUsers: any =
       {"data": [{ "name": "Roberto Alomar", "icon": "folder" }]};
 
@@ -44,7 +44,7 @@ describe('UserListService (with spies)', () => {
     httpClientSpy.get.and.returnValue(asyncError(errorResponse));
 
     userListService.getMockUsers().subscribe(
-      heroes => fail('expected an error, not heroes'),
+      users => fail('expected an error, not heroes'),
       error  => expect(error.message).toContain('test 404 error')
     );
   });
