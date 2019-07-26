@@ -44,7 +44,7 @@ describe('UserListService (with spies)', () => {
     httpClientSpy.get.and.returnValue(asyncError(errorResponse));
 
     userListService.getMockUsers().subscribe(
-      users => fail('expected an error, not heroes'),
+      users => fail('expected an error, not users'),
       error  => expect(error.message).toContain('test 404 error')
     );
   });
