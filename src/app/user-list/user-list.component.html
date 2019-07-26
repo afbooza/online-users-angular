@@ -1,7 +1,7 @@
 <div class="online-users">
   <div class="online-users__header" (click)="usersLoaded ? expandUsers() : return" >
-      <i class="material-icons online-users__header-icon online-users__header-icon--disabled">person</i>
-      <p class="online-users__header-title">Expand Online Users</p>
+      <i class="material-icons online-users__header-icon {{iconModifier}}">person</i>
+      <p class="online-users__header-title">{{title}}</p>
   </div>
   <div class="online-users__list">
     <mat-list>

@@ -5,21 +5,20 @@
     box-sizing:border-box; 
     transition:transform 2s; 
     position:fixed;
-    min-width:200px;
     bottom:0;
     z-index:9999;
-    /* transform: translateY(calc(100% - 4rem)); */
 }
 .online-users--expanded{
     transform:translateY(-400px);
 }
 .online-users__header{
+    min-width:250px;
     height:6rem;
     padding:0rem 3rem;
     box-sizing:border-box;
-    justify-content: space-between;
     display:flex;
     align-items: center;
+    text-align:center;
     background-color:rgba(32, 138, 204);;
 }
 .online-users__header:hover{
@@ -39,6 +38,7 @@
 
 .online-users__header-title{
     flex:1;
+
 }
 .online-users__list{
     height:400px;
